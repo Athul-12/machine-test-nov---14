@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="wel">Profile</div>
+        <div class="butt">
+            <a href="{% url 'userhome:home' %}"><button>home</button></a>
+            <a href="{% url 'userhome:logout' %}"><button>LogOut</button></a>
+        </div>
+    </nav>
+    <section class="container1">
+        <div class="container2">
+            <div class="user-detailes">
+                <div class="input-box">
+                    <img src="{% static 'image/school2.jpg' %}" alt="">
+                </div>
+                
+                <div class="input-box">
+                    <span class="detailes">Full Name &nbsp;:</span>
+                    <div class="u_detailes">{{user_data.name}}</div>
+                </div>
+                <div class="input-box">
+                    <span class="detailes">User Name :</span>
+                    <div class="u_detailes">{{user_data.uname}}</div>
+                </div>
+                <div class="input-box">
+                    <span class="detailes">Password &nbsp;&nbsp; :</span>
+                    <div class="u_detailes">{{user_data.password}}</div>
+                </div>
+                
+                <div class="input-box">
+                    <a href="{% url 'userhome:edit' user_data.id %}"><button>Edit</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

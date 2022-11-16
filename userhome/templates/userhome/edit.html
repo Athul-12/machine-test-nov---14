@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="wel">Profile</div>
+        <div class="butt">
+            <a href="{% url 'userhome:home' %}"><button>home</button></a>
+            <a href="{% url 'userhome:logout' %}"><button>LogOut</button></a>
+        </div>
+    </nav>
+    <section class="container1">
+        <div class="container2">
+            <div class="user-detailes">
+                <div class="input-box">
+                    <img src="{% static 'image/school2.jpg' %}" alt="">
+                </div>
+                <form  method="POST" action="{% url 'userhome:update' %}">
+                    {% csrf_token %}
+                    <div class="input-box">
+                        <span class="detailes">Full Name &nbsp;:</span>
+                        <input type="text" name="n_ame" value="{{use.name}}">
+                    </div>
+                    <div class="input-box">
+                        <span class="detailes">User Name :</span>
+                        <input type="text" name="u_name" value="{{use.uname}}">
+                    </div>
+                    <div class="input-box">
+                        <span class="detailes">Password &nbsp;&nbsp; :</span>
+                        <input type="text" name="pas" value="{{use.password}}">
+                    </div>
+
+                    <div class="input-box">
+                        <button type="submit">update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

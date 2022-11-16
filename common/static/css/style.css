@@ -1,0 +1,33 @@
+.mainbody {
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 97vh;
+    background-repeat: no-repeat;
+}
+.mainbody img {
+   
+    width: 100%;
+    height: 100%;
+}
+.mainbody input {
+    margin-left: -1280px;
+    margin-top: 380px;
+    position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color: rgb(181, 0, 0);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    
+}
+.mainbody input:hover{
+    background-color: rgb(227, 166, 176);
+}

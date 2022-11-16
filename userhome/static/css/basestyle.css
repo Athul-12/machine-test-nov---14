@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    padding: 24px;
+    background: rgb(20, 20, 20);
+    position: relative;
+}
+.wel{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding-right: 420px;
+}
+nav button {
+    background: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-right: 1px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: inherit;
+}
+nav button:hover{
+    background-color: whitesmoke;
+}
+.butt{
+    margin-left: 70px;
+    margin-top: 15px;
+    padding-left:100px ;
+}
+
+.pop{
+    width: 50%;
+    margin-left: 300px;
+    padding: 7px;
+    height: 12vh;
+}
+.pop button {
+    width: 100%;
+}
+.modal-dialog .modal-body input{
+    width: 100%;
+}
+.posts {
+    width: 50%;
+    margin-left: 27%;
+    margin-top: 8px;
+}
+.container1 {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container2 {
+    max-width: 450px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    padding: 25px 30px;
+    box-shadow: 0px 1px 9px -2px;
+}
+
+
+.user-detailes .input-box .detailes {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline;
+}
+.user-detailes .input-box{
+    margin-top: 20px;
+}
+.user-detailes .input-box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 35%;
+
+}
+.user-detailes .input-box .u_detailes{
+    display: inline;
+    padding-right: 200px;
+    margin-left: 50px;
+    border: 1px solid;
+}
+.user-detailes .input-box button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.user-detailes .input-box button:hover{
+    background-color: rgb(21, 21, 21);
+}
